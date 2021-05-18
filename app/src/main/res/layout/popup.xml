@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:orientation="vertical"
+    android:background="#020238"
+    android:layout_gravity="center"
+    android:padding="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Congratulation!!"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You achieved Pluto."
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+
+    <!-- Icon here -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/planet1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tags:"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+    <!-- List of Tags here -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:background="@drawable/edittextbackground"
+            android:inputType="text|textMultiLine" />
+    </LinearLayout>
+
+
+</LinearLayout>
